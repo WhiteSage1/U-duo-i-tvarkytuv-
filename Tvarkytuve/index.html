@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tvarkytuve</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="title">
+            <h1>Užduočių tvarkytuvė</h1>
+        </div>
+        <div class="inputText">
+            <h1>Įršykite užduotį:</h1>
+            <input class="write" type="text" id="title" name="uzduotis" required minlength="1" maxlength="3000" placeholder="Įršykite užduoties pavadinimą"/>
+            <textarea class="description" id="description" name="description" rows="4" cols="50" placeholder="Įršykite užduoties aprašą"></textarea>
+            <button class="submit" onclick="addTask()">Pateikti</button>
+        </div>
+        <div class="allTasks" id="allTasks">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
